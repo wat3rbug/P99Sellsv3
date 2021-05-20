@@ -1,0 +1,2 @@
+1. Make notification that buyer is found
+2. Make notification that seller is found

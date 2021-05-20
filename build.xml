@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="P99 Sells version 3" default="mainTarget" basedir=".">
+	<description>
+		A Java application for monitoring a players vending activities in EC Tunnel on Everquest.  The config fil allows for adding items, the owners, the price and whether you're selling it or buying it.  Furthermore, the log file is selected and monitoring begins to include what players you want to allow to buy/sell stuff based on the ones listed in the configuration. All of this is a GUI based appliaction.
+	</description>
+	<!-- Sets the properties here -->
+	<property name="src.dir" location="src"/>
+	<property name="build.dir" location="bin"/>
+	<property name="lib.dir" location="lib"/>
+	<property name="dist" location="dist"/>
+	<property name="app-version" value="1.0"/>
+	<property name="main-class" value="P99Sellsv3" />
+	
+	<!-- Set the classpath -->
+	<path id="build.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<!-- Cleanup -->
+	<target name="clean" description="clean up">
+		<delete dir="${build.dir}" />
+		<delete dir="${dist}"/>
+	</target>
+	<target name="makedir">
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${dist}"/>
+	</target>
+
+	<!-- Compile application -->
+	<target name="compile" depends="clean, makedir">
+		<javac srcdir="${src.dir}"
+			destdir="${build.dir}"
+			debug="yes"
+			includeantruntime="false"
+			classpathref="build.classpath">
+		</javac>
+	</target>
+	
+	<!-- Make a jar file of everything -->
+	<target name="jar" depends="compile" description="Makes a jar file that you can run outside of the build area">
+		<buildnumber />
+		<jar destfile="${dist}/P99Sellsv3-${app-version}.jar" basedir="${build.dir}">
+			<manifest>
+				<attribute name="Main-Class" value="${main-class}"/>
+			</manifest>
+			<zipgroupfileset dir="${lib.dir}" includes="**/*.jar"/>
+		</jar>
+		<copy file="config.xml" todir="${dist}" />
+	</target>
+		
+	<!-- Default target to run all targets -->
+	<target name="mainTarget" depends="compile">
+		<description>Main Target</description>
+		<buildnumber />
+		<mkdir dir="${dist}"/>
+		
+		<copy file="config.xml" todir="${build.dir}"/>
+	</target>
+</project>
+
+	

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item owner="recall" name="Azure Sleeves" price="50" activity="selling" />
+	<item owner="staab" name="Kunzar Cloak" price="100" activity="selling" />
+	<item owner="staab" name="Spiked Collar" price="10" activity="selling" />
+	<item owner="recall" name="Hollowed Bone Bracers" price="50" activity="selling" />
+	<item owner="willcall" name="Impskin Gloves" price="200" activity="selling" />
+	<item owner="willcall" name="Silver Rose Engagement Ring" price="5" activity="selling" />
+	<item owner="willcall" name="Ring of Goblin Lords" price="25" activity="selling" />
+	<item owner="willcall" name="Carved Ivory Mask" price="20" activity="selling" />
+	<item owner="willcall" name="Mask of the Eight Eyes" price="20" activity="selling" />
+	<item owner="willcall" name="Cryptrobber's Knife" price="20" activity="selling" />
+	<item owner="recall" name="Green Silken Drape" price="50" activity="selling" />
+	<item owner="recall" name="Loam Encrusted Lined Shoes" price="100" activity="selling" />
+	<item owner="recall" name="Idol of the Underking" price="200" activity="selling" />
+	<item owner="recall" name="Imbued Teir`Dal Chain Mantle" price="400" activity="selling" />
+	<item owner="recall" name="Spell: Arch Lich" price="300" activity="selling" />
+	<item owner="recall" name="Spell: Elemental Maelstrom" price="50" activity="selling" />
+	<item owner="qelin" name="Hollowed Bone Bracers" price="50" activity="selling" />
+	<item owner="qelin" name="Golden Efreeti Boots" price="800" activity="buying" />
+	<item owner="burnya" name="Engraved Skull Amulet" price="50" activity="selling" />
+	<item owner="burnya" name="Sacrificial Dagger" price="30" activity="selling" />
+	<item owner="burnya" name="Foreman's Skull Cap" price="50" activity="selling" />
+	<item owner="burnya" name="Spell: Energy Storm" price="50" activity="selling" />
+	<item owner="burnya" name="Spell: Improved Invisibility" price="100" activity="selling" />
+	<item owner="lacki" name="Black Alloy Medallion" price="50" activity="selling" />
+	<item owner="lacki" name="Golden Chitin Bracer" price="200" activity="selling" />
+	<item owner="lacki" name="Charred Guardian Breastplate" price="100" activity="selling" />
+	<item owner="lacki" name="Platinum Armband" price="50" activity="selling" />
+	<item owner="lacki" name="Imbued Koada`Dal Mithril Cuirass" price="600" activity="selling" />
+	<item owner="lacki" name="Polished Bone Bracelet" price="50" activity="selling" />
+	<item owner="lacki" name="Gatorscale Leggings" price="300" activity="selling" />
+	<item owner="lacki" name="Drake-hide Leggings" price="50" activity="selling" />
+	<item owner="lacki" name="Runed Circlet" price="100" activity="selling" />
+	<item owner="lacki" name="Bloodstained Tunic" price="50" activity="selling" />
+	<item owner="lacki" name="Loam Encrusted Lined Shoes" price="100" activity="selling" />
+	<item owner="lacki" name="Nightshade Wreath" price="100" activity="selling" />
+	<item owner="lacki" name="Blockcutter Gloves" price="20" activity="selling" />
+	<item owner="lacki" name="Bloodstone Eyepatch" price="20" activity="selling" />
+</items>
