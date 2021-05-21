@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project name="P99 Sells version 3" default="mainTarget" basedir=".">
+<project name="P99 Sells version 3" default="jar" basedir=".">
 	<description>
 		A Java application for monitoring a players vending activities in EC Tunnel on Everquest.  The config fil allows for adding items, the owners, the price and whether you're selling it or buying it.  Furthermore, the log file is selected and monitoring begins to include what players you want to allow to buy/sell stuff based on the ones listed in the configuration. All of this is a GUI based appliaction.
 	</description>

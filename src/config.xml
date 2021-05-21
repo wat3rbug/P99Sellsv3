@@ -14,7 +14,7 @@
 	<item owner="recall" name="Loam Encrusted Lined Shoes" price="100" activity="selling" />
 	<item owner="recall" name="Idol of the Underking" price="200" activity="selling" />
 	<item owner="recall" name="Imbued Teir`Dal Chain Mantle" price="400" activity="selling" />
-	<item owner="recall" name="Spell: Arch Lich" price="300" activity="selling" />
+	<item owner="recall" name="Spell: Arch Lich" price="300" activity="buying" />
 	<item owner="recall" name="Spell: Elemental Maelstrom" price="50" activity="selling" />
 	<item owner="qelin" name="Hollowed Bone Bracers" price="50" activity="selling" />
 	<item owner="qelin" name="Golden Efreeti Boots" price="800" activity="buying" />

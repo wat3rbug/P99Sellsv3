@@ -47,8 +47,8 @@ public class VendorController implements IVendorController {
 				temp.owner = raw.substring(0,1).toUpperCase() + raw.substring(1).toLowerCase();
 				temp.name = nNode.getAttributes().getNamedItem("name").getNodeValue();
 				temp.price = Integer.parseInt(nNode.getAttributes().getNamedItem("price").getNodeValue());
-				temp.buying = nNode.getAttributes().getNamedItem("activity")
-					.getNodeValue() == "selling";
+				temp.buying = (nNode.getAttributes().getNamedItem("activity")
+					.getNodeValue()).matches("buying");
 				itemList.add(temp);
 			}
 			Collections.sort(itemList);
@@ -162,7 +162,6 @@ public class VendorController implements IVendorController {
 				// do nothing since youre only trying not to spam CPU with nops
 			}
 		}
-		System.out.println("starting the parse...");
 		// get the line count for start
 
 		int orig_count = 0;
@@ -172,32 +171,31 @@ public class VendorController implements IVendorController {
 			e.printStackTrace();
 			System.exit(0);
 		}
-		System.out.println("got original count: " + orig_count);
 		// read the log file now and parse at new lines
 		while (running == RUNNING) {
 			try {
-                System.out.println("reading...");
 				BufferedReader reader = new BufferedReader(new FileReader(logFile));
 				int count = 0;
 				while (count < orig_count) {
 					reader.readLine();
 					count++;
 				}
-                System.out.println("reading new...");
 				String temp = null;
 				while ((temp = reader.readLine()) != null) {
 					for (int i = 0; i < itemList.size(); i++) {
 						VendItem item = itemList.get(i);
 						if (!item.disabled && !item.completed && temp.contains(item.name)
-						&& temp.contains("WTB") && item.buying) {
+						&& temp.contains("WTB") && !item.buying) {
 							alertBuyer(item, temp);
 						}
 						if (!item.disabled && !item.completed && temp.contains(item.name)
-						&& temp.contains("WTS") && !item.buying) {
+						&& temp.contains("WTS") && item.buying) {
 							alertSeller(item, temp);
 						}
 					}
+                    count++;
 				}
+                orig_count = count;
 			} catch (FileNotFoundException fnfe) {
 				fnfe.printStackTrace();
 				System.exit(0);
