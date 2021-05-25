@@ -14,15 +14,14 @@
 	<item owner="recall" name="Loam Encrusted Lined Shoes" price="100" activity="selling" />
 	<item owner="recall" name="Idol of the Underking" price="200" activity="selling" />
 	<item owner="recall" name="Imbued Teir`Dal Chain Mantle" price="400" activity="selling" />
-	<item owner="recall" name="Spell: Arch Lich" price="300" activity="buying" />
-	<item owner="recall" name="Spell: Elemental Maelstrom" price="50" activity="selling" />
+	<item owner="recall" name="Arch Lich" price="300" activity="buying" />
+	<item owner="recall" name="Elemental Maelstrom" price="50" activity="selling" />
 	<item owner="qelin" name="Hollowed Bone Bracers" price="50" activity="selling" />
 	<item owner="qelin" name="Golden Efreeti Boots" price="800" activity="buying" />
 	<item owner="burnya" name="Engraved Skull Amulet" price="50" activity="selling" />
 	<item owner="burnya" name="Sacrificial Dagger" price="30" activity="selling" />
-	<item owner="burnya" name="Foreman's Skull Cap" price="50" activity="selling" />
-	<item owner="burnya" name="Spell: Energy Storm" price="50" activity="selling" />
-	<item owner="burnya" name="Spell: Improved Invisibility" price="100" activity="selling" />
+	<item owner="burnya" name="Energy Storm" price="50" activity="selling" />
+	<item owner="burnya" name="Improved Invisibility" price="100" activity="selling" />
 	<item owner="lacki" name="Black Alloy Medallion" price="50" activity="selling" />
 	<item owner="lacki" name="Golden Chitin Bracer" price="200" activity="selling" />
 	<item owner="lacki" name="Charred Guardian Breastplate" price="100" activity="selling" />
@@ -37,4 +36,15 @@
 	<item owner="lacki" name="Nightshade Wreath" price="100" activity="selling" />
 	<item owner="lacki" name="Blockcutter Gloves" price="20" activity="selling" />
 	<item owner="lacki" name="Bloodstone Eyepatch" price="20" activity="selling" />
+	<item owner="lacki" name="Hollowed Bone Bracers" price="50" activity="selling" />
+	<item owner="lacki" name="Drop of Mercury" price="20" activity="selling" />
+	<item owner="lacki" name="Cape of Midnight Mist" price="20" activity="selling" />
+	<item owner="lacki" name="Mistmoore Battle Drums" price="50" activity="selling" />
+	<item owner="lacki" name="Iksar Beserker Club" price="225" activity="selling" />
+	<item owner="lacki" name="Green Silken Drape" price="50" activity="selling" />
+	<item owner="burnya" name="Harpoon of the Depths" price="100" activity="selling" />
+	<item owner="burnya" name="Wake of Tranquility" price="50" activity="selling" />
+	<item owner="burnya" name="Rune of Ap'sagor" price="50" activity="buying" />
+	<item owner="burnya" name="Pillar of Frost" price="50" activity="buying" />
+	<item owner="burnya" name="Wrath of Al'Kabor" price="50" activity="buying" />
 </items>
