@@ -25,4 +25,6 @@ public interface IVendorController {
 	public void logFileUpdate(File logFile);
 	
 	public void updateItemDisplay(String toon);
+	
+	public void addItemToList(VendItem item);
 }

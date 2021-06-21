@@ -36,6 +36,7 @@ public class VendorFrame extends JFrame implements IVendorFrame {
 		scroller = new JScrollPane(listingPanel);
 		menuBar = new JMenuBar();		
 		setupFileMenu(controller);
+		setupAddItemMenu(controller);
 		setupToonMenu(controller.getToonList());
 		setupAboutMenu();
 		setupListings(controller.getItemList(), listingPanel);
@@ -44,6 +45,14 @@ public class VendorFrame extends JFrame implements IVendorFrame {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setSize((int)listingDefault.getWidth() + 10, (int)listingDefault.getHeight() + 60); // 360, 290
 		this.setVisible(true);
+	}
+	
+	public void setupAddItemMenu(IVendorController controller) {
+		JMenu itemMenu = new JMenu("Item");
+		JMenuItem item = new JMenuItem("Add Item...");
+		item.addActionListener(new AddItemListener(controller));
+		itemMenu.add(item);
+		menuBar.add(itemMenu);
 	}
 	
 	public void setupFileMenu(IVendorController controller) {

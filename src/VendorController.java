@@ -214,6 +214,11 @@ public class VendorController implements IVendorController {
 		}
 	}
 	
+	public void addItemToList(VendItem item) {
+		itemList.add(item);
+		frame.filterListings(itemList);
+	}
+	
 	public void updateItemDisplay(String currentToon) {
 		for (int i = 0; i < itemList.size(); i++) {
 			VendItem tempItem = itemList.get(i);
