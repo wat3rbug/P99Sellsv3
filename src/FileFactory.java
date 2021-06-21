@@ -54,14 +54,15 @@ public class FileFactory {
 		Element rootElement = doc.createElement("items");
 		doc.appendChild(rootElement);
 		for(VendItem item : itemList) {
-			Element latestItem = doc.createElement("item");
 			if (!item.completed) {
+			    Element latestItem = doc.createElement("item");
 				latestItem.setAttribute("name", item.name);
 				latestItem.setAttribute("owner", item.owner);
 				latestItem.setAttribute("price", String.valueOf(item.price));
-				latestItem.setAttribute("activity", (item.buying ? "buying" : "selling"));
+				latestItem.setAttribute("activity", (item.buying == true ? "buying" : "selling"));
+			    rootElement.appendChild(latestItem);
 			}
-			rootElement.appendChild(latestItem);
+
 		}
 		doc.normalize();
 		TransformerFactory tFactory = TransformerFactory.newInstance();

@@ -155,6 +155,7 @@ public class VendorController implements IVendorController {
 	 */
 	
 	public void run() {
+	    System.out.println("waiting on log file selection...");
 		while (logFile == null) {
 			try {
 				Thread.sleep(SEC);
@@ -171,6 +172,7 @@ public class VendorController implements IVendorController {
 			e.printStackTrace();
 			System.exit(0);
 		}
+		System.out.println("started parsing log file...");
 		// read the log file now and parse at new lines
 		while (running == RUNNING) {
 			try {
@@ -193,9 +195,9 @@ public class VendorController implements IVendorController {
 							alertSeller(item, temp);
 						}
 					}
-                    count++;
+                                        count++;
 				}
-                orig_count = count;
+                                orig_count = count;
 			} catch (FileNotFoundException fnfe) {
 				fnfe.printStackTrace();
 				System.exit(0);
