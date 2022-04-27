@@ -4,7 +4,8 @@
 	<item owner="staab" name="Kunzar Cloak" price="100" activity="selling" />
 	<item owner="staab" name="Spiked Collar" price="10" activity="selling" />
 	<item owner="recall" name="Hollowed Bone Bracers" price="50" activity="selling" />
-	<item owner="willcall" name="Impskin Gloves" price="200" activity="selling" />
+	<item owner="willcall" name="Boon of the Clear Mind" price="100" activity="buying" />
+        <item owner="willcall" name="Impskin Gloves" price="200" activity="selling" />
 	<item owner="willcall" name="Silver Rose Engagement Ring" price="5" activity="selling" />
 	<item owner="willcall" name="Ring of Goblin Lords" price="25" activity="selling" />
 	<item owner="willcall" name="Carved Ivory Mask" price="20" activity="selling" />

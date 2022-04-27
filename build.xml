@@ -47,7 +47,7 @@
 			</manifest>
 			<zipgroupfileset dir="${lib.dir}" includes="**/*.jar"/>
 		</jar>
-		<copy file="config.xml" todir="${dist}" />
+		<copy file="${src.dir}/config.xml" todir="${dist}" />
 	</target>
 		
 	<!-- Default target to run all targets -->
@@ -56,7 +56,7 @@
 		<buildnumber />
 		<mkdir dir="${dist}"/>
 		
-		<copy file="config.xml" todir="${build.dir}"/>
+		<copy file="${src.dir}/config.xml" todir="${build.dir}"/>
 	</target>
 </project>
 
