@@ -1,6 +1,6 @@
 #P99Sellsv3  An application to notify user of characters online that wish to tarde items.
 
-<h2>Purpose</h2>h2>  P99Sells – Honest analysis of an overcomplicated simple application
+<h2>Purpose</h2>  P99Sells – Honest analysis of an overcomplicated simple application
 
  
 <p>One day while playing Project 1999, a simulator to play Everquest like it was back in 1999, I came to the realization that I could automate or monitor one of my least favorite activities in Project 1999.  It is trading goods in the East Commons tunnel.  You see, when I play a game, one thing I don’t like to do is sit around for hours waiting for the opportunity to buy or sell an item to an interested party.  I don’t like doing that in real life, and even less in a game.  I understand that trading, along with other social interactions are what made Project 1999 so great.  The developers of the game frown on all kinds of hacks and programs to make the game easier, but they do allow you to at least look at the log files of the game, as long as you’re not using it to inject new information back to the game.  For example, I can’t use a program to take what items I do have and push them in the auction channel on the server.  How I would love to do it, so I can just remain offline and have stuff being sold and bought while I do other things I like better.  In fact they implemented the bazaar a few years later for just such activities.  So I made an application in Java so that I can monitor the EC tunnel and notify me remotely that a customer I want is now available to trade with me.</p>
